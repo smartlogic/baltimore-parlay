@@ -6,8 +6,8 @@
     <link href="narrow.css" rel="stylesheet" media="screen and (max-width: 320px)" />
     <link href="medium.css" rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 480px)" />
     <link href="limbo.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 649px)" />
-    <link href="wide.css" rel="stylesheet" media="screen and (min-width: 650px) and (max-width: 1024px)" />
-    <link href="huge.css" rel="stylesheet" media="screen and (min-width: 1025px)" />
+    <link href="wide.css" rel="stylesheet" media="screen and (min-width: 650px) and (max-width: 968px)" />
+    <link href="huge.css" rel="stylesheet" media="screen and (min-width: 969px)" />
     <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
   </head>
@@ -22,9 +22,13 @@
           document.createElement(html5_elements[i]);
         }
 
-        function resizeTo(width, height) {
-          document.window.width = width;
-          document.window.height = height;
+        function toggle(elem_id) {
+          var elem = document.getElementById(elem_id);
+          if (elem.style.display == 'block') {
+            elem.style.display = 'none';
+          } else {
+            elem.style.display = 'block';
+          }
         }
       //]]>
     </script>
@@ -40,23 +44,43 @@
     <nav>
       <ul>
         <li>
-          <a href="http://localhost:3000/preview#">when and where</a>
+          <h2 onclick="toggle('when');">when and where</h2>
+          <div id="when">BohConf 2010 was held at the <a href="http://www.bccenter.org" target="_blank">Baltimore Convention Center</a>, June 7 - 9, 2010.</div>
         </li>
         <li>
-          <a href="http://localhost:3000/preview#">what is boh</a>
+          <h2 onclick="toggle('what');">what is boh</h2>
+          <div id="what">
+            <strong>BohConf is the official
+            <a href="http://en.oreilly.com/rails2010" target="_blank">RailsConf 2010</a> unconference</strong>.
+            At BohConf, we're going to get our hands dirty writing code and
+            sharing ideas in an open and free-form environment. This
+            hacking-centric event will include community code drives featuring
+            well known OSS authors, a code retreat, a programming competition,
+            and barcamp-style discussions. It is <strong>free</strong> and will
+            run alongside RailsConf in the convention center. <strong>Everyone is
+            welcome</strong> at BohConf. Registration is free and can be
+            completed at <a href="https://en.oreilly.com/rails2010/public/register">https://en.oreilly.com/rails2010/public/register</a></p> 
+   
+            <p class='trailing'>You can track updates and developments by
+            following us on <a href="http://twitter.com/bohconf">Twitter</a> and
+            by contributing to <a
+              href="http://wiki.github.com/smartlogic/BohConf/">the BohConf wiki</a>.
+            Your input will shape this event.
+          </div>
         </li>
         <li>
-          <a href="http://localhost:3000/preview#">sub category</a>
+          <h2 onclick="toggle('sub');">sub category</h2>
+          <div id="sub">The name BohConf is an homage to the Baltimore institution <a href="http://nationalbohemian.com/" target="_blank">National Bohemian</a> (or Natty Boh).  Every town has their local light beer of choice, and ours is Natty Boh.  Make sure to grab one (or several) when you're in town.</div>
         </li>
       </ul>
     </nav>
    
     <section class="resolution">
-      <a href="javascript:void(0)" id="device_iphone_vertical" onclick="window.resizeTo(320,480);">iPhone/Android vertical</a>
-      <a href="javascript:void(0)" id="device_iphone_horizontal" onclick="window.resizeTo(480,320);">iPhone/Android horizontal</a>
-      <a href="javascript:void(0)" id="device_limbo" onclick="window.resizeTo(500,500);">Uncommon resolution</a>
-      <a href="javascript:void(0)" id="device_ipad" onclick="window.resizeTo(728,1024);">iPad</a>
-      <a href="javascript:void(0)" id="device_huge" onclick="window.resizeTo(1100,900);">Web / Large resolution</a>
+      <a href="javascript:void(0)" id="device_iphone_vertical">iPhone/Android vertical</a>
+      <a href="javascript:void(0)" id="device_iphone_horizontal">iPhone/Android horizontal</a>
+      <a href="javascript:void(0)" id="device_limbo">Uncommon resolution</a>
+      <a href="javascript:void(0)" id="device_ipad">iPad vertical</a>
+      <a href="javascript:void(0)" id="device_huge">iPad horizontal / Laptop</a>
     </section>
   </body>
 </html>

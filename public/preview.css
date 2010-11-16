@@ -27,19 +27,22 @@ nav ul li {
   width: 100%;
 }
 /* line 28, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-nav ul li a {
+nav ul li h2 {
   display: block;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   margin-top: 1px;
+  margin-bottom: 0px;
   text-decoration: none;
   background: gray url(app_list_arrow.png) no-repeat scroll;
   background-position: 95% 50%;
   padding: 7px;
+  cursor: pointer;
 }
-/* line 38, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-nav ul li a:hover {
-  background-color: blue;
+
+nav ul li div {
+  display: none;
 }
 
 /* line 41, ../../../app/stylesheets/partials/_fluid_layouts.sass */

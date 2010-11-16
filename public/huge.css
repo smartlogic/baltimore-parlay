@@ -13,3 +13,7 @@ section.resolution a#device_huge {
   color: black;
   font-weight: bold;
 }
+
+nav ul li div {
+  display: block;
+}
