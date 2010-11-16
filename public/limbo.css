@@ -1,0 +1,9 @@
+/* In between tablet and smart phone */
+body {
+  background-color: red;
+}
+
+header {
+  height: 200px;
+  background: url(mr_boh_big.png) no-repeat center top;
+}

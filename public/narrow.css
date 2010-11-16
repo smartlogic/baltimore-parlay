@@ -1,0 +1,9 @@
+/* iPhone vertical */
+body {
+  background-color: yellow;
+}
+
+header {
+  height: 90px;
+  background: url(mr_boh.png) no-repeat center top;
+}

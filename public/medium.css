@@ -1,0 +1,10 @@
+/* iPhone horizontal or high res phone */
+body {
+  background-color: green;
+  color: white;
+}
+
+header {
+  height: 90px;
+  background: url(mr_boh.png) no-repeat center top;
+}

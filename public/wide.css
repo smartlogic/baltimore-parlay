@@ -1,0 +1,28 @@
+/* iPad: 768px or horizontal high res device at 800px */
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  height: 200px;
+  background: url(mr_boh_big.png) no-repeat center top;
+}
+
+img.small {
+  display: none;
+}
+
+section.content {
+  width: 63%;
+  float: left;
+}
+
+nav {
+  float: left;
+  width: 30%;
+}
+
+footer {
+  clear: both;
+}
