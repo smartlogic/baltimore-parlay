@@ -1,0 +1,219 @@
+/* Sizes
+ * Narrow (iphone:320px), 
+ * Medium (iphone horizontal or high res phone: 480px)    
+ * Wide (ipad: 768px or horizontal high res device at 800px) */
+/* Sizes
+ * Narrow (iphone:320px), 
+ * Medium (iphone horizontal or high res phone: 480px)    
+ * Wide (ipad: 768px or horizontal high res device at 800px) */
+/* line 6, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  width: 100%;
+  font-size: 12px;
+  -webkit-text-size-adjust: none;
+}
+
+/* line 14, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+header, footer, aside, section, article, nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+nav ul li {
+  width: 100%;
+}
+/* line 28, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+nav ul li a {
+  display: block;
+  font-weight: bold;
+  color: white;
+  margin-top: 1px;
+  text-decoration: none;
+  background: gray url(app_list_arrow.png) no-repeat scroll;
+  background-position: 95% 50%;
+  padding: 7px;
+}
+/* line 38, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+nav ul li a:hover {
+  background-color: blue;
+}
+
+/* line 41, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+section.content {
+  padding: 10px;
+  padding-top: 0;
+}
+
+/* Narrow */
+@media screen and (max-width: 320px) {
+  /* line 46, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: yellow;
+  }
+
+  /* line 49, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 90px;
+    background: url(mr_boh.png) no-repeat center top;
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  /* line 46, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: yellow;
+  }
+
+  /* line 49, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 90px;
+    background: url(mr_boh.png) no-repeat center top;
+  }
+}
+
+/* Medium */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* line 54, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: green;
+    color: white;
+  }
+
+  /* line 58, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 90px;
+    background: url(mr_boh.png) no-repeat center top;
+  }
+}
+
+@media screen and (min-device-width: 321px) and (max-device-width: 480px) {
+  /* line 54, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: green;
+    color: white;
+  }
+
+  /* line 58, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 90px;
+    background: url(mr_boh.png) no-repeat center top;
+  }
+}
+
+/* Limbo */
+@media screen and (min-width: 481px) and (max-width: 649px) {
+  /* line 64, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: red;
+  }
+
+  /* line 66, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 200px;
+    background: url(mr_boh_big.png) no-repeat center top;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 649px) {
+  /* line 64, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: red;
+  }
+
+  /* line 66, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 200px;
+    background: url(mr_boh_big.png) no-repeat center top;
+  }
+}
+
+/* Wide */
+@media screen and (min-width: 650px) and (max-width: 1024px) {
+  /* line 72, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  /* line 75, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 200px;
+    background: url(mr_boh_big.png) no-repeat center top;
+  }
+
+  /* line 80, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  img.small {
+    display: none;
+  }
+
+  /* line 83, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  section.content {
+    width: 63%;
+    float: left;
+  }
+
+  /* line 87, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  nav {
+    float: left;
+    width: 30%;
+  }
+
+  /* line 91, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  footer {
+    clear: both;
+  }
+}
+
+@media screen and (min-device-width: 650px) and (max-device-width: 1024px) {
+  /* line 72, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  /* line 75, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  header {
+    height: 200px;
+    background: url(mr_boh_big.png) no-repeat center top;
+  }
+
+  /* line 80, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  img.small {
+    display: none;
+  }
+
+  /* line 83, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  section.content {
+    width: 63%;
+    float: left;
+  }
+
+  /* line 87, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  nav {
+    float: left;
+    width: 30%;
+  }
+
+  /* line 91, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  footer {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* line 95, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+  body {
+    background-color: red;
+  }
+}
