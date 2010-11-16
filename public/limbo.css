@@ -7,3 +7,8 @@ header {
   height: 200px;
   background: url(mr_boh_big.png) no-repeat center top;
 }
+
+section.resolution a#device_limbo {
+  color: black;
+  font-weight: bold;
+}

@@ -1,12 +1,5 @@
-/* Sizes
- * Narrow (iphone:320px), 
- * Medium (iphone horizontal or high res phone: 480px)    
- * Wide (ipad: 768px or horizontal high res device at 800px) */
-/* Sizes
- * Narrow (iphone:320px), 
- * Medium (iphone horizontal or high res phone: 480px)    
- * Wide (ipad: 768px or horizontal high res device at 800px) */
-/* line 6, ../../../app/stylesheets/partials/_fluid_layouts.sass */
+/* Common CSS */
+
 body {
   margin: 0;
   padding: 0;
@@ -55,82 +48,13 @@ section.content {
   padding-top: 0;
 }
 
-/* Wide */
-@media screen and (min-width: 650px) and (max-width: 1024px) {
-  /* line 72, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  body {
-    background-color: black;
-    color: white;
-  }
-
-  /* line 75, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  header {
-    height: 200px;
-    background: url(mr_boh_big.png) no-repeat center top;
-  }
-
-  /* line 80, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  img.small {
-    display: none;
-  }
-
-  /* line 83, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  section.content {
-    width: 63%;
-    float: left;
-  }
-
-  /* line 87, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  nav {
-    float: left;
-    width: 30%;
-  }
-
-  /* line 91, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  footer {
-    clear: both;
-  }
+section.resolution {
+  background-color: #ccc;
+  padding: 10px 5px;
+  margin-top: 15px;
+  float: left;
 }
 
-@media screen and (min-device-width: 650px) and (max-device-width: 1024px) {
-  /* line 72, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  body {
-    background-color: black;
-    color: white;
-  }
-
-  /* line 75, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  header {
-    height: 200px;
-    background: url(mr_boh_big.png) no-repeat center top;
-  }
-
-  /* line 80, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  img.small {
-    display: none;
-  }
-
-  /* line 83, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  section.content {
-    width: 63%;
-    float: left;
-  }
-
-  /* line 87, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  nav {
-    float: left;
-    width: 30%;
-  }
-
-  /* line 91, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  footer {
-    clear: both;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  /* line 95, ../../../app/stylesheets/partials/_fluid_layouts.sass */
-  body {
-    background-color: red;
-  }
+section.resolution a {
+  padding-right: 8px;
 }

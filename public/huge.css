@@ -2,3 +2,14 @@
 body {
   background-color: red;
 }
+
+header {
+  height: 200px;
+  background: url(mr_boh_big.png) no-repeat center top;
+  background-color: #bbd270;
+}
+
+section.resolution a#device_huge {
+  color: black;
+  font-weight: bold;
+}

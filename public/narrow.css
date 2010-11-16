@@ -7,3 +7,8 @@ header {
   height: 90px;
   background: url(mr_boh.png) no-repeat center top;
 }
+
+section.resolution a#device_iphone_vertical {
+  color: black;
+  font-weight: bold;
+}

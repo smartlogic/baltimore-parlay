@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)http://localhost:3000/preview -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Liquid Layout Prototypes</title>
     <link href="preview.css" rel="stylesheet" />
     <link href="narrow.css" rel="stylesheet" media="screen and (max-width: 320px)" />
@@ -10,7 +10,8 @@
     <link href="huge.css" rel="stylesheet" media="screen and (min-width: 1025px)" />
     <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
-  </head><body>
+  </head>
+  <body>
     <script type="text/javascript">
       //<![CDATA[
         var html5_elements = ["header", "nav", "section", 
@@ -19,6 +20,11 @@
         
         for(var i=0; i < html5_elements.length; i++) {
           document.createElement(html5_elements[i]);
+        }
+
+        function resizeTo(width, height) {
+          document.window.width = width;
+          document.window.height = height;
         }
       //]]>
     </script>
@@ -44,6 +50,13 @@
         </li>
       </ul>
     </nav>
-  
-
-</body></html>
+   
+    <section class="resolution">
+      <a href="javascript:void(0)" id="device_iphone_vertical" onclick="window.resizeTo(320,480);">iPhone/Android vertical</a>
+      <a href="javascript:void(0)" id="device_iphone_horizontal" onclick="window.resizeTo(480,320);">iPhone/Android horizontal</a>
+      <a href="javascript:void(0)" id="device_limbo" onclick="window.resizeTo(500,500);">Uncommon resolution</a>
+      <a href="javascript:void(0)" id="device_ipad" onclick="window.resizeTo(728,1024);">iPad</a>
+      <a href="javascript:void(0)" id="device_huge" onclick="window.resizeTo(1100,900);">Web / Large resolution</a>
+    </section>
+  </body>
+</html>

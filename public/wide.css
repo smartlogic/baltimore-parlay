@@ -26,3 +26,9 @@ nav {
 footer {
   clear: both;
 }
+
+section.resolution a#device_ipad {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
